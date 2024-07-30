@@ -70,12 +70,11 @@ void setup() {
 }
 
 void loop() {
-  // connectToWiFi();
-  // float hum = dht.readHumidity();
-  // // Read temperature as Celsius (the default)
-  // float temp = dht.readTemperature();
-  float temp = 2.036;
-  int hum = 105;
+  float hum = dht.readHumidity();
+  // Read temperature as Celsius (the default)
+  float temp = dht.readTemperature();
+  // float temp = 2.036;
+  // int hum = 105;
   Serial.println(temp);
   Serial.println(hum);
   if (!tb.connected()) {
